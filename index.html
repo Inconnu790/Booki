@@ -10,191 +10,104 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <title>Booki</title>
-</head><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
 <body>
     <header>
-        <div>
-            <!-- barre de Navigation -->
-            <nav>
-                <div class="flexbetween">
-                    <div><img src="images/logo/Booki.png" alt="logo" width="61.09px" height="19px" /></div>
-                    <div class="sizeLiens flexAround">
-                        <div class="sizeNav flexCentre bordureNav ">
-                            <a class="colorLien1 decorationNone" href="#">Hebergements</a> </div>
-                        <div class="sizeNav flexCentre"><a class="colorLien2 decorationNone" href="#">Activités</a></div>
-                            <div class="sizeNav flexCentre"><a class="colorLien2 decorationNone" href="#">Connexion/Inscription</a>
-                        </div>
-                    </div>
+        <!-- barre de Navigation -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+            <div class="container-fluid ">
+
+                <a class="navbar-brand" href="#"><img src="images/logo/Booki.png" height="20px"></a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="w-50 d-flex justify-content-evenly navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Hébergements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Activité</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                S'inscrire/Se connecter
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Se connecter</a></li>
+                                <li><a class="dropdown-item" href="#">S'inscrire</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-            <!--fin de la barre de Navigation-->
-           
-                <section class="imgIntro Intro">
-                    <div class="mx-auto">
-                        <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-                        <p>En plein centre ville ou en pleine nature</p>
-                        
-                            <!-- Corps de la page -->
-                            <!-- Barre de recherche-->
-                            <div class="flexCentre bordureSearch ">
-                                <div class="backGrey flexCentre iconsize"> <i class="fas fa-map-marker-alt"> </i></div>
-                                <div> <input class="recherche flexCentre bordureNone paddingSearch " type="search"
-                                        value="Martinique, France"></div>
-                                <div class="backBlue flexCentre buttonSearch">Rechercher</div>
-                            </div>
-                            <!--Fin barre de recherche-->
-                            <!--barre de Filtre-->
-                            <div class="filtre margeFiltre">
-                                <div class="margeFiltreTitre">
-                                    <h3> Filtres</h3>
-                                </div>
-                                <div class="filtreTexteIcons flexCentre">
-                                    <i class="fas fa-money-bill-wave filtreIcons flexCentre"> </i>
-                                    <div class="filtreTexte flexCentre"> Economique</div>
-                                </div>
-                                <div class="filtreTexteIcons flexCentre">
-                                    <i class="fas fa-child filtreIcons flexCentre"></i>
-                                    <div class="filtreTexte flexCentre">Familial</div>
-                                </div>
-                                <div class="filtreTexteIcons flexCentre">
-                                    <i class="fas fa-heart filtreIcons flexCentre"></i>
-                                    <div class="filtreTexte flexCentre">Romantique</div>
-                                </div>
-                                <div class="filtreTexteIcons flexCentre">
-                                    <i class="fas fa-dog filtreIcons flexCentre"></i>
-                                    <div class="filtreTexte flexCentre">Animaux Autorisés</div>
-                                </div>
-                            </div>
-                            <!--Fin barre de filtre-->
-                            <div class="filtre margeFiltre">
-                                <i class="fas fa-info fa-xs filtreIconsInfo flexCentre "></i>
-                                <div class="flexCentre">Plus de 500 logements sont disponibles dans cette ville</div>
-                            </div>
-                        </div>
-                </section>
-                <section id="Description">
-                    <img src="images/Martinique/Activité/maman-cherie.jpg">
-                    <div>
-                    <h3>La Martinique est surnommée « l'île aux fleurs » pour l'incroyable diversité de sa flore.
-                         Tel un jardin botanique géant, elle offre un bel aperçu des merveilles naturelles des Caraïbes.
-                          Entre ses champs de canne à sucre et ses paysages composés de milliers de fleurs,
-                         les botanistes en herbe y seront au paradis.</h3>
-                        </div>
-                </section>
-    <section class="flexAround">
-        <div class="flexColumnAround sizehebergements backGrey BlocHebergements">
-            <h2>Hébergements à Marseille</h2>
-            <div class="flexbetween">
-                <div class="backWhite">
-                    <div class="imgHebergements1"></div>
-                    <div class="marginleft">
-                        <h3>Auberge de la Cannebière</h3>
-                        <p>Nuit à partir de 25€</p>
-                        <div>Etoile</div>
-                    </div>
-                </div>
-                <div class="backWhite">
-                    <div class="imgHebergements2"></div>
-                    <div class="marginleft">
-                        <h3>Hôtel du port</h3>
-                        <p>Nuit à partir de 52€</p>
-                        <div>Etoile</div>
-                    </div>
-                </div>
-                <div class="backWhite">
-                    <div class="imgHebergements3"></div>
-                    <div class="marginleft">
-                        <h3>Hôtel les mouettes</h3>
-                        <p>Nuit à partir de 76€</p>
-                        <div>Etoile</div>
+            </div>
+        </nav>
+    </header>
+    <!-- Introduction -->
+    <section id="plage">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mt-5">
+                    <h1>Trouvez l'hébergement de vos rêve sur l'île de la Martinique</h1>
+                    <p> Plus de 100 hebergements disponible</p>
+                    <div class="bordureSearch d-flex justify-content-center ">
+                        <div class="backGrey iconsize"> <i class="fas fa-map-marker-alt"> </i></div>
+                        <div> <input class="recherche bordureNone" type="search" value="Martinique, France"></div>
+                        <div class="backBlue">Rechercher</div>
                     </div>
                 </div>
             </div>
-            <div class="flexbetween">
-                <div class="backWhite">
-                    <div class="imgHebergements4"></div>
-                    <div class="marginleft">
-                        <h3>Auberge de la mer</h3>
-                        <p>Nuit à partir de 46€</p>
-                        <div>Etoile</div>
-                    </div>
-                </div>
-                <div class="backWhite">
-                    <div class="imgHebergements5"></div>
-                    <div class="marginleft">
-                        <h3>Auberge le Panier</h3>
-                        <p>Nuit à partir de 23€</p>
-                        <div>Etoile</div>
-                    </div>
-                </div>
-                <div class="backWhite">
-                    <div class="imgHebergements6"></div>
-                    <div class="marginleft">
-                        <h3>Hôtel chez Amina</h3>
-                        <p>Nuit à partir de 96€</p>
-                        <div>Etoile</div>
-                    </div>
-                </div>
-            </div>
-            <em>Afficher plus</em><br />
         </div>
-        <p></p>
-        </div>
-        <div></div>
-        <div class="sizePopulaires backGrey BlocPopulaire">
-            <h2> Les plus populaires</h2>
-            <div class="backWhite flexDirection">
-                <div class="imgPopulaires1"></div>
-                <div class="marginleft">
-                    <h3>Hôtel le Soleil du Matin</h3>
-                    <p>Nuit à partir de 128€</p>
-                    <div>Etoile</div>
+        <div class="row">
+            <div class="col-md-12 d-flex justify-content-center flex-direction-row">
+                <div class="row m-3">
+                    <div class="col-md-2">
+                        <p>Icone</p>
+                    </div>
+                    <div class="col-md-10">
+                        <p>Filtre</p>
+                    </div>
                 </div>
-            </div>
-            <div class="backWhite flexDirection">
-                <div class="imgPopulaires2"></div>
-                <div class="marginleft">
-                    <h3>Au coeur de l'eau</h3>
-                    <p>Nuit à partir de 71€</p>
-                    <div>Etoile</div>
+                <div class="row m-3">
+                    <div class="col-md-2">
+                        <p>Icone</p>
+                    </div>
+                    <div class="col-md-10">
+                        <p>Economie</p>
+                    </div>
                 </div>
-            </div>
-            <div class="backWhite flexDirection">
-                <div class="imgPopulaires3"></div>
-                <div class="marginleft">
-                    <h3>Hôtel tout Bleu</h3>
-                    <p>Nuit à partir de 68€</p>
-                    <div>Etoile</div>
+                <div class="row m-3">
+                    <div class="col-md-2">
+                        <p>Icone</p>
+                    </div>
+                    <div class="col-md-10">
+                        <p>Familial</p>
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-md-2">
+                        <p>Icone</p>
+                    </div>
+                    <div class="col-md-10">
+                        <p>Animaux autorisé</p>
+                    </div>
+                </div>
+                <div class="row m-3">
+                    <div class="col-md-2">
+                        <p>Icone</p>
+                    </div>
+                    <div class="col-md-10">
+                        <p>Non fumeur</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--============================================== Activité====================================== -->
-    <h2>Activités à Marseille</h2>
-    <section class="flexAround">
-        <div class="flexColumnAround bloc14">
-            <div class="imgActivite1">
-            </div>
-            <div class="marginleft">
-                <h3> Vieux port</h3>
-            </div>
-        </div>
-        <div class="flexColumnAround bloc2356">
-            <div class="imgActivite2">
-            </div>
-            <div class="marginleft">
-                <h3> Fort de Pomègues</h3>
-            </div>
-            <div class="imgActivite3">
-            </div>
-            <div class="marginleft">
-                <h3> îles du frioul</h3>
-            </div>
-        </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

@@ -1,399 +1,42 @@
 /* Police*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+/* color
+#0065FC bleu
+#DEEBFF bleu claire 
+#F2F2F2 gris
+#ffffff  blanc
 
+*/
 head,
 body {
-    font-family: 'Oswald', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-nav{
-    margin-left: 60px;
-    margin-right: 60px;
-}
-header{
-margin-left: 0;
-margin-right: 0;
-}
-h3 {
-    font-weight: 900;
-}
-
-/* navigation*/
-.flexDirection{
-    display: flex;
-    flex-direction: row;
-    margin-top: 25px;
-}
-.flexCentre {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flexbetween {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flexAround {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.flexColumnCentre {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.flexColumnbetween {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.flexColumnAround {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.decorationNone {
-    text-decoration: none;
-}
-
-.sizeLiens {
-    width: 30%;
-}
-
-.sizeNav {
-    width: 140px;
-    height: 99px;
-}
-
-.colorLien1 {
-    color: #0065FC;
 
 }
-
-.colorLien2 {
-    color: black;
-
+#plage{
+    background-image: url(./images/beach-2528635.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 94vh;
+  }
+.backBlue{
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
 }
-
-.bordureNav {
-    border-top: 2px solid #0065FC;
-
+.backGrey{
+    background-color: #F2F2F2;
+    border-radius: 15px 0 0 15px;
+    padding: 3px;
 }
-
-/*Barre de recherche*/
-.bordureNone {
-    border: none;
-}
-
-.bordureSearch {
-    width: 400px;
-    border-radius: 10px;
-    border: 0.5px solid #F2F2F2;
-}
-
-.paddingSearch {
-
-    padding-left: 20px;
-
-}
-
-.recherche {
-    height: 50px;
-    width: 250px;
-    font-size: 14px;
-    color: black;
-    font-weight: bold;
-
-}
-
 .iconsize {
-    height: 50px;
+    height: 40px;
     width: 50px;
     border-radius: 15px 0 0 15px;
 
 }
+.recherche {
+    height: 40px;
+    width: 150px;
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
 
-.backGrey {
-    background-color: #F2F2F2;
-}
-
-.backBlue {
-
-    background-color: #0065FC;
-}
-
-.buttonSearch {
-    height: 50px;
-    width: 120px;
-    color: #DEEBFF;
-    cursor: pointer;
-    border-radius: 0 15px 15px 0;
-}
-
-.bordureIcone {
-    height: 50px;
-    width: 50px;
-    border-radius: 10px 0 0 10px;
-    border-radius: 0 10px 10px 0;
-    background-color: #DEEBFF;
-}
-
-/* Filtre*/
-
-.margeFiltre {
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
-.filtre {
-    display: flex;
-    align-items: center;
-}
-
-.margeFiltreTitre {
-    margin-right: 20px;
-
-}
-
-.filtreTexteIcons {
-    border: 2px solid #F2F2F2;
-    height: 45px;
-    border-radius: 25px;
-    margin-right: 15px;
-}
-
-.filtreTexteIcons:hover>.filtreTexte {
-    color:#0065FC;
-}
-
-.filtreTexteIcons:hover>.filtreIcons {
-    color: #DEEBFF;
-    background-color: #0065FC;
-}
-
-.filtreTexte {
-    height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 0 25px 25px 0;
-}
-
-.filtreIcons {
-    border-left: 1px;
-    border-radius: 25px;
-    width: 45px;
-    height: 45px;
-    color: #0065FC;
-    background-color: #DEEBFF;
-}
-
-/*information*/
-.filtreIconsInfo {
-    border-left: 1px;
-    border-radius: 25px;
-    width: 25px;
-    height: 25px;
-    color: #0065FC;
-    background-color: white;
-    border: 2px solid #F2F2F2;
-    margin-right: 15px;
-}
-.marginleft{
-    margin-left: 10px;
-    
-}
-
-/*Hebergements*/
-.backWhite {
-    background-color: #ffffff;
-    border-radius: 20px;
-    border: 5px solid #ffffff;
-    box-shadow: 5px 5px 15px rgb(192, 189, 189);
-
-}
-.backWhite2 {
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 10px 15px rgb(192, 189, 189);
-    width: 300px;
-    height: 500px;
-}
-
-.sizehebergements {
-    flex: 2;
-    height: 650px;
-    margin-right: 20px;
-    border-radius: 20px;
-}
-
-.sizePopulaires {
-    flex: 1;
-    height: 650px;
-    margin-left: 20px;
-    border-radius: 20px;
-}
-
-.BlocHebergements {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-.BlocPopulaire {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.imgHebergements1 {
-    background-image: url("images/hebergements/4_small/Hôtel\ tout\ bleu\ tout\ blanc.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 120px;
-    border-radius: 20px 20px 0 0;
-}
-
-.imgHebergements2 {
-    background-image: url("images/hebergements/4_small/apprt4.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 120px;
-    border-radius: 20px 20px 0 0;
-}
-
-.imgHebergements3 {
-    background-image: url("images/hebergements/4_small/apprt7.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 120px;
-    border-radius: 20px 20px 0 0;
-}
-
-.imgHebergements4 {
-    background-image: url("images/hebergements/4_small/apprt8.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 120px;
-    border-radius: 20px 20px 0 0;
-}
-
-.imgHebergements5 {
-    background-image: url("images/hebergements/4_small/apprt6.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 120px;
-    border-radius: 20px 20px 0 0;
-}
-
-.imgHebergements6 {
-    background-image: url("images/hebergements/4_small/au\ Coeur\ de\ l\'eau.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 120px;
-    border-radius: 20px 20px 0 0;
-}
-.imgPopulaires1 {
-    background-image: url("images/hebergements/4_small/apprt1.jpg");
-    width: 300px;
-    background-size: cover;
-    background-position: center;
-    height: 150px;
-    border-radius: 20px 0 0 20px;
-}
-.imgPopulaires2 {
-    background-image: url("images/hebergements/4_small/apprt9.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 150px;
-    border-radius: 20px 0 0 20px;
-}
-.imgPopulaires3 {
-    background-image: url("images/hebergements/4_small/Le Soleil Du Matin.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 150px;
-    border-radius: 20px 0 0 20px;
-}
-.imgActivite1{
-    background-image: url("images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 500px;
-    border-radius: 20px 20px 0 0;
-}
-.imgActivite2{
-    background-image: url("images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 100px;
-    border-radius: 20px 20px 0 0;
-}
-.imgActivite3{
-    background-image: url("images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 300px;
-    height: 100px;
-    border-radius: 20px 20px 0 0;
-}
-.bloc14{
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 10px 15px rgb(192, 189, 189);
-    width: 300px;
-    height: 500px;
-}
-
-.bloc2356{
-    background-color: #ffffff;
-    border-radius: 20px;
-    box-shadow: 0 10px 15px rgb(192, 189, 189);
-    width: 300px;
-    height: 100px;
-}
-.imgIntro{
-    height: 90vh;
-    width: 99vw;
-    background-image: url("beach-2528635.jpg");
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-}
-.Intro{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    color: #ffffff;
-}
-#Description img{
-    height: 30vw;
-}
-#Description {
-    display: flex;
-    justify-content: space-bet;
-}
-.fas {
-    color: #0065FC;
-}
-#Description h3 {
-    display: flex;
-    justify-content: flex-end;
 }
